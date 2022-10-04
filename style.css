@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.menu-lateral {
+    height: 100%;
+    position: absolute;
+}
+
+.icon-menu i {
+    cursor: pointer;
+    animation-name: anim-entrar;
+    animation-duration: 1s;
+    margin: 1rem;
+    font-size: 2rem;
+    color: rgb(126, 126, 126);
+}
+
+.container-menu-lateral {
+    display: none;
+    height: 100%;
+    background-color: rgb(231, 231, 231);
+    margin: 0 0 0 8rem;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+
+.lateral li {
+    display: flex;
+    justify-content: center;
+    width: 260px;
+    margin: 1rem 0;
+}
+
+.hr {
+    width: 80%;
+    background-color: rgba(70, 70, 70, 0.178);
+    height: 1px;
+    margin: 0 auto;
+}
+
+.lateral li a {
+    color: rgb(71, 120, 255);
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.fechar-button {
+    margin: 2rem 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.fechar-button button {
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
+    margin: 1rem;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+.fechar-button i {
+    color: rgb(182, 182, 182);
+    font-size: 2rem;
+}
+
+@keyframes anim-entrar {
+    0% {
+        margin-left: -250px;
+    }
+
+    100% {
+        margin-right: 8rem;
+    }
+}
+
+@keyframes anim-sair {
+
+    0% {
+
+    }
+
+    100% {
+        margin-left: -130px;
+        display: none;
+    }
+}
